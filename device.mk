@@ -41,10 +41,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_TARGET_VNDK_VERSION := 31
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Health HAL
 PRODUCT_PACKAGES += \
@@ -60,9 +60,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
 
-PRODUCT_PACKAGES += \
-    bootctrl.mt6893 \
-    bootctrl.mt6893.recovery
 
 # Fastbootd
 PRODUCT_PACKAGES += \
